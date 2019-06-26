@@ -1,0 +1,47 @@
+<!--pages/mainpage/mainpage.wxml-->
+<!-- <text>pages/mainpage/mainpage.wxml</text> -->
+<view>
+  <view class="navbar">
+    <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+  </view>
+  <loading hidden="{{!loading}}">加载中...</loading>
+  
+  <!--玩-->
+  <!-- <view hidden="{{currentTab!==0}}">
+    <import src="../template/template.wxml"/>
+    <view>
+      <template is="wan" data="{{wanarray}}"/>
+    </view>
+  </view> -->
+  <view class='page-body' wx:for="({mainpage})" wx:key="id">
+    <block wx:for='{{wanarray}}'>
+      <navigator url='../detail/detaill?id={{item.id}}'>
+        <view class='displayitem-wan'>
+          <view>
+            <image src='{{item.img}}' style='width:300px;height:185px;'></image>
+          </view>
+        </view>
+        <view class="subarea">
+          <view class='titlerow'>
+              <view class='wantitle'>{{item.title}}</view>
+          </view>
+          <view class='wancount'>
+            <view class='wanprice'>{{item.price}}</view>
+            <view class='time'>{{item.time}}</view>
+          </view>
+        </view>
+        <view class='hr2'>    
+        </view>
+      </navigator>
+    </block>
+  </view>
+  
+  <!--乐-->
+  <view hidden="{{currentTab!==1}}">
+    <import src="../template/template.wxml"/>
+    <view>
+      <template is="wan" data="{{wanarray}}"/>
+    </view>
+  </view>
+ 
+</view>

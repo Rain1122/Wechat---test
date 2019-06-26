@@ -1,0 +1,15 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/mainpage/mainpage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0e1b2a",
+    "navigationBarTitleText": "发售日志",
+    "navigationBarTextStyle": "white"
+  },
+  
+  "sitemapLocation": "sitemap.json"
+}

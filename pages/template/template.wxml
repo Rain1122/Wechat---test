@@ -1,0 +1,40 @@
+<!-- 主页面小图模版 -->
+<template name='le'>
+  <block wx:for='{{learray}}'>
+    <view class='displayitem' bindtap='seeDetail' id='0'>
+      <view>
+        <image src='{{item.img}}' style='width:125px;height:85px;'></image>
+      </view>
+      <view class='desc'>
+        <view class='title'>{{item.title}}</view>
+        <view class='count'>
+          <view class='price'>{{item.price}}</view>
+          <view class='time'>{{item.time}}</view>
+        </view>
+      </view>
+    </view>
+    <view class='hr2'>    
+    </view>
+  </block>
+</template>
+<!-- 主页面大图模版 -->
+<template name='wan'>
+  <block wx:for='{{wanarray}}'>
+    <view class='displayitem-wan' bindtap='seeDetail' id='1'>
+      <view>
+        <image src='{{item.img}}' style='width:300px;height:185px;'></image>
+      </view>
+    </view>
+    <view class="subarea">
+      <view class='titlerow'>
+          <view class='wantitle'>{{item.title}}</view>
+      </view>
+      <view class='wancount'>
+        <view class='wanprice'>{{item.price}}</view>
+        <view class='time'>{{item.time}}</view>
+      </view>
+    </view>
+    <view class='hr2'>    
+    </view>
+  </block>
+</template>

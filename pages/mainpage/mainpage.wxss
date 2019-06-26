@@ -1,0 +1,102 @@
+/* 页面顶部nav */
+page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: rgb(255, 255, 255);
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+  color: rgb(138, 138, 138);
+}
+.navbar .item.active{
+  color: rgb(77, 77, 77);
+  font-weight: bold;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: rgb(36, 70, 133);
+}
+/* 乐主页面style */
+.displayitem{
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+.desc{
+  margin-left: 20px;
+  line-height: 30px;
+}
+.title{
+  font-size: 13px;
+  font-weight: bold;
+}
+.count{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  color: #000000;
+}
+.price{
+  line-height: 40px;
+  font-size: 14px;
+  color: #b8520e;
+  font-weight: bold;
+}
+.time{
+ position: absolute;
+ right: 10px;
+ padding: 3px;
+ border-style: groove;
+ border-width: 1px;
+}
+.hr2{
+  height: 3px;
+  background-color: #cccccc;
+}
+/* 玩主页面style */
+.displayitem-wan{
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+.titlerow{
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+.wantitle{
+  font-size: 16px;
+}
+.wancount{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+.wanprice{
+  margin-left: 10px;
+  font-size: 14px;
+  color: #b8520e;
+  font-weight: bold;
+}
+.wanhr2{
+  height: 3px;
+  background-color: #cccccc;
+}

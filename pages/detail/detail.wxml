@@ -1,0 +1,26 @@
+<!--pages/detial/detial.wxml-->
+<text>pages/detial/detial.wxml</text>
+<!--等待框-->
+
+<view>title:{{wandetail.title}}</view>
+<!--滚动列表-->
+<!-- <scroll-view scroll-y="true" wx:if="{{wandetail.title}}">
+  <block wx:for='{{wandetail}}'>
+    <view class='displayitem-wan'>
+      <view>
+        <image src='{{wandetail.img}}' style='width:300px;height:185px;'></image>
+      </view>
+    </view>
+    <view class="subarea">
+      <view class='titlerow'>
+          <view class='wantitle'>{{wandetail.title}}</view>
+      </view>
+      <view class='wancount'>
+        <view class='wanprice'>{{wandetail.price}}</view>
+        <view class='time'>{{wandetail.time}}</view>
+      </view>
+    </view>
+    <view class='hr2'>    
+    </view>
+  </block>
+</scroll-view> -->
